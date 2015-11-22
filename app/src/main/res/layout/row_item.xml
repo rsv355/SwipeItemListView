@@ -7,30 +7,15 @@
     android:background="#FFFFFF">
 
 
-    <LinearLayout
-        android:id="@+id/linear"
-        android:layout_toRightOf="@+id/icon"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <View
-            android:background="#494949"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-    <TextView android:text="@+id/TextView01"
-        android:gravity="left"
+    <TextView
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textAppearance="?android:textAppearanceMedium"
         android:id="@+id/label"
-
+        android:layout_toRightOf="@+id/icon"
         android:textColor="#494949">
     </TextView>
-
-    </LinearLayout>
 
     <ImageView android:id="@+id/icon"
         android:layout_width="70dp"
@@ -39,5 +24,6 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true">
     </ImageView>
+
 
 </RelativeLayout>

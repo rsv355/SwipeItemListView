@@ -220,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
              //   viewHolder.checkbox = (CheckBox) view.findViewById(R.id.check);
                 ImageView icon = (ImageView) rowView.findViewById(R.id.icon);
 
-            final LinearLayout linear = (LinearLayout)rowView.findViewById(R.id.linear);
+         //   final LinearLayout linear = (LinearLayout)rowView.findViewById(R.id.linear);
 
             //if(this.listener != null)
               //  Holder.icon.setOnTouchListener(this.listener);
@@ -284,7 +284,7 @@ public class MainActivity extends AppCompatActivity {
                  //   text.getLayoutParams().width = text.getWidth()- (int) tempW;
                   //  text.requestLayout();
 
-                        linear.requestLayout();
+           //             linear.requestLayout();
 
                     if(xPoistion>=halfWidth+200){
 
