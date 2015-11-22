@@ -16,6 +16,7 @@ import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         windowwidth = getWindowManager().getDefaultDisplay().getWidth();
 
         list = (ListView)findViewById(R.id.list);
+
 
         String[] items = new String[]{"Parent Zone","Child Zone","Test Zone"};
 
@@ -218,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
              //   viewHolder.checkbox = (CheckBox) view.findViewById(R.id.check);
                 ImageView icon = (ImageView) rowView.findViewById(R.id.icon);
 
-
+            final LinearLayout linear = (LinearLayout)rowView.findViewById(R.id.linear);
 
             //if(this.listener != null)
               //  Holder.icon.setOnTouchListener(this.listener);
@@ -282,7 +284,7 @@ public class MainActivity extends AppCompatActivity {
                  //   text.getLayoutParams().width = text.getWidth()- (int) tempW;
                   //  text.requestLayout();
 
-
+                        linear.requestLayout();
 
                     if(xPoistion>=halfWidth+200){
 
@@ -291,7 +293,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(i);
                     }
 
-                    if(xPoistion!=0){
+                  /*  if(xPoistion!=0){
                         if(xPoistion % 10 == 0) {
                             Random myColor = new Random();
                             text.setTextColor(Color.rgb(myColor.nextInt(255), myColor.nextInt(255), myColor.nextInt(255)));
@@ -301,7 +303,7 @@ public class MainActivity extends AppCompatActivity {
                     }else{
                         int orgCol = Color.parseColor("#494949");
                         text.setTextColor(orgCol);
-                    }
+                    }*/
 
                     return true;
                 }
